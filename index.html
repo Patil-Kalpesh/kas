@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAS - Keep Appointments Simple</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="sticky-header navbar navbar-expand-lg navbar-light  py-1">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/Logo.png" alt="KAS Logo" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav mx-auto mx-1">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <a href="#" class="search-icon me-4">
+            <i class="fas fa-search"></i>
+          </a>
+          <a href="tel:7708728115" class="phone-btn me-3">
+            (770) 872-8115
+          </a>
+          <a href="#" class="intro-btn">
+            Introduction <i class="fas fa-play-circle ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="hero-content">
+            <h1 class="hero-title">Never Miss <span class="title-sapn"> a Call <br>or a Customer Again</h1>
+            <h2 class="hero-subtitle">Meet Your Perfect 24/7 Assistant</span></h2>
+            <p class="hero-text">
+              KAS is your AI receptionist that answers instantly, speaks naturally, books appointments, and converts
+              leads — even after hours, on weekends, and while you're busy.
+            </p>
+            <div class="hero-buttons mt-4 d-flex flex-column flex-lg-row align-items-lg-center">
+              <a href="#" class="btn btn-primary btn-md  mb-3 mb-lg-0 fw-semibold fs-6">
+                <i class="fas fa-headphones me-2"></i> Hear KAS in Action
+              </a>
+              <span class="or-text mx-lg-2 mb-3 mb-lg-0 fs-6 fw-normal">or</span>
+              <a href="#" class="btn btn-dark btn-md  fs-6">
+                <i class="fas fa-user-headset me-2"></i> Try KAS Free Today
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-images position-relative text-center">
+            <img class="kas-banner" src="assets/Kas-banner.jpg" alt="">
+            <!-- Main floating cards -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 2 -->
+  <section class="container features-section text-center p-3">
+    <!-- Main Heading -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-10">
+        <h1 class="main-heading mb-1">
+          While You Work, KAS Works the <br>Phones And <span class="text-primary">Never Misses a Lead</span>
+        </h1>
+      </div>
+    </div>
+
+    <!-- Center Image -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-8 ">
+        <video width="100%" height="100%" autoplay muted loop playsinline
+          style="display:block; margin:0 auto; border-radius: 13px;">
+          <source src="./assets/Lower.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <!-- Features List -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="features-card">
+          <div class="row">
+            <!-- Left Column Features -->
+            <div class="col-md-6">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="feature-text">
+                  Instantly answers 100% of incoming calls
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="feature-text">
+                  Books appointments in real-time — no callbacks needed
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="feature-text">
+                  Speaks 80+ languages in a natural, human tone
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column Features -->
+            <div class="col-md-6">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="feature-text">
+                  Works 24/7 — no sick days, breaks, or overtime pay
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="feature-text">
+                  Customized to sound like your brand, not a bot
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="feature-text">
+                  Male or Female voices with many accents
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- --3 -->
+  <div class="container">
+    <section class="trusted-section">
+      <!-- Main Heading -->
+      <div class="row justify-content-center ">
+        <div class="col-lg-10 text-center">
+          <h2 class="trusted-heading">Trusted by Many Local Businesses</h2>
+        </div>
+      </div>
+
+      <!-- Business Types -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+          <div class="business-types">
+            Dentists. Restoration Pros. Limo Companies. Roofers & More. Real People Getting Real Results.
+          </div>
+        </div>
+      </div>
+
+      <!-- Trusted Business Count -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-4">
+          <div class="trusted-count">
+            <div class="count">200+</div>
+            <div class="trusted-text">Trusted<br>Business</div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="network-visualization">
+            <!-- Profile Images with Connection Lines -->
+            <div class=" profile-1">
+              <img src="./assets/Trusted.png" alt="Business Person" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Client Logos -->
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="client-logos">
+            <div class="logo-item">
+              <img src="assets/logo5.png" alt="Client Logo 1" class="img-fluid">
+            </div>
+            <div class="logo-item">
+              <img src="assets/logo6.png" alt="Client Logo 2" class="img-fluid">
+            </div>
+            <div class="logo-item">
+              <img src="assets/logo7.png" alt="Client Logo 3" class="img-fluid">
+            </div>
+            <div class="logo-item">
+              <img src="assets/logo8.png" alt="Client Logo 4" class="img-fluid">
+            </div>
+            <div class="logo-item">
+              <img src="assets/logo9.png" alt="Client Logo 5" class="img-fluid">
+            </div>
+            <div class="logo-item">
+              <img src="assets/logo10.png" alt="Client Logo 6" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- 4 -->
+  <section class="comparison-section">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-4">
+        <div class="col-lg-10 text-center">
+          <h2 class="trusted-heading"> Why Businesses Are Firing Receptionists
+            <span class="highlight">& Outsourcing KAS Instead</span>
+          </h2>
+        </div>
+        <div class="col-lg-7 col-12">
+          <div class="business-types">
+            Every missed call is missed revenue. KAS never drops the ball.
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center text-center">
+        <!-- Feature Column -->
+        <div class="col-md-4 mb-4">
+          <div class="comparison-card">
+            <div class="icon mb-2">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h5 class="fw-semibold">Feature</h5>
+            <ul class="feature-list text-start mt-4">
+              <li>Availability</li>
+              <li>Monthly Cost</li>
+              <li>Language Support</li>
+              <li>Sick Days / Vacations</li>
+              <li>Scalability</li>
+              <li>Custom Brand Voice</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- KAS AI Assistant Column -->
+        <div class="col-md-4 mb-4">
+          <div class="comparison-card active">
+            <div class="kas-avatar mb-2">
+              <img src="./assets/Center.png" alt="KAS AI" class="rounded-circle border">
+            </div>
+            <h5 class="fw-semibold">KAS AI Assistant</h5>
+            <ul class="feature-list text-start mt-4">
+              <li><i class="fas fa-angle-right me-2 text-primary"></i>24/7, 365 Days</li>
+              <li><i class="fas fa-angle-right me-2 text-primary"></i>$497–$997</li>
+              <li><i class="fas fa-angle-right me-2 text-primary"></i>80+ Languages</li>
+              <li><i class="fas fa-angle-right me-2 text-primary"></i>None</li>
+              <li><i class="fas fa-angle-right me-2 text-primary"></i>Easy & Instant</li>
+              <li><i class="fas fa-angle-right me-2 text-primary"></i>Yes</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Receptionist Column -->
+        <div class="col-md-4 mb-4">
+          <div class="comparison-card">
+            <div class="icon mb-2">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h5 class="fw-semibold">Receptionist/Call Center</h5>
+            <ul class="feature-list text-start mt-4">
+              <li><i class="fas fa-angle-right me-2 text-primary"></i>Business Hours Only</li>
+              <li><i class="fas fa-angle-right me-2 text-primary"></i>$3,500–$5,000+</li>
+              <li><i class="fas fa-angle-right me-2 text-primary"></i>1–2 Languages</li>
+              <li><i class="fas fa-angle-right me-2 text-primary"></i>Multiple per year</li>
+              <li><i class="fas fa-angle-right me-2 text-primary"></i>Expensive & Limited</li>
+              <li><i class="fas fa-angle-right me-2 text-primary"></i>No</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="#" class="explore-btn">
+          Get Started for Less Than $17/Day <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- 5 -->
+  <section class="ai-call-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Left Image Card -->
+        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+          <div class="ai-card p-3 rounded-4 shadow-sm">
+            <div class="ai-img-bg">
+              <img src="./assets/KAS-in-callcenter-2.jpeg" alt="Receptionist" class="img-fluid rounded-4">
+              <p class="mt-2 mb-0 fw-semibold">Your Smart Receptionist</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Circular AI Overlay Image -->
+        <div class="col-lg-1 d-none d-lg-block position-relative">
+          <div class="ai-circle-img">
+            <img src="./assets/1.png" alt="AI glowing" class="img-fluid rounded-circle shadow">
+          </div>
+        </div>
+
+        <!-- Text Content -->
+        <div class="col-lg-7">
+          <div class="text-content ps-lg-4">
+            <p class="text-muted mb-1">Never Miss a Customer Again</p>
+            <h2 class="text-dark fw-bold mb-3">
+              Let’s be <span class="highlight">honest...</span><br>
+              <span class="text-dark">You can’t answer every call.</span>
+            </h2>
+            <p class="text-dark mb-4">
+              Meet KAS – Your 24/7 AI Voice Assistant that handles calls, books appointments, and answers client queries
+              while you focus on growing your business.
+            </p>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2 text-muted"><i class="fas fa-check-circle text-primary me-2"></i> Answers calls instantly
+              </li>
+              <li class="mb-2 text-muted"><i class="fas fa-check-circle text-primary me-2"></i> Speaks naturally — like
+                a real team member</li>
+              <li class="mb-2 text-muted"><i class="fas fa-check-circle text-primary me-2"></i> Custom voice &
+                personality to match your brand</li>
+            </ul>
+            <a href="#" class="explore-btn">Explore Now <i class="fas fa-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- 6 -->
+  <div class="container lang-div">
+    <div class="text-center"><a class="explore-btn ">Explore All Languages</a></div>
+
+    <div class="main-content">
+
+
+      <div class="content-section">
+        <h1 class="main-title mt-4">
+          Get Started <span class="highlight">with KAS</span><br>
+          in 80+ Languages for Free!
+        </h1>
+      </div>
+    </div>
+
+    <div class="languages-wraper">
+      <div class="avatar-section">
+        <div class="avatar">
+          <img src="assets/KAS-in-lang.jpeg" alt="">
+        </div>
+      </div>
+      <div class="languages-grid">
+
+        <div class="language-pill">
+          <div class="flag english">🇬🇧</div>
+          <span>English</span>
+        </div>
+        <div class="language-pill">
+          <div class="flag spain">🇪🇸</div>
+          <span>Spain</span>
+        </div>
+        <div class="language-pill">
+          <div class="flag russia">🇷🇺</div>
+          <span>Russia</span>
+        </div>
+        <div class="language-pill">
+          <div class="flag japanese">🇯🇵</div>
+          <span>Japanese</span>
+        </div>
+        <div class="language-pill">
+          <div class="flag korean">🇰🇷</div>
+          <span>Korean</span>
+        </div>
+
+        <div class="language-pill">
+          <div class="flag egypt">🇪🇬</div>
+          <span>Egypt</span>
+        </div>
+        <div class="language-pill">
+          <div class="flag brazil">🇧🇷</div>
+          <span>Brazil</span>
+        </div>
+        <div class="language-pill">
+          <div class="flag nigeria">🇳🇬</div>
+          <span>Nigeria</span>
+        </div>
+        <div class="language-pill">
+          <div class="flag france">🇫🇷</div>
+          <span>France</span>
+        </div>
+        <div class="language-pill">
+          <div class="flag mexico">🇲🇽</div>
+          <span>Mexico</span>
+        </div>
+
+        <div class="language-pill">
+          <div class="flag english">🇬🇧</div>
+          <span>English</span>
+        </div>
+        <div class="language-pill">
+          <div class="flag spain">🇪🇸</div>
+          <span>Spain</span>
+        </div>
+        <div class="language-pill">
+          <div class="flag russia">🇷🇺</div>
+          <span>Russia</span>
+        </div>
+        <div class="language-pill">
+          <div class="flag japanese">🇯🇵</div>
+          <span>Japanese</span>
+        </div>
+        <div class="language-pill">
+          <div class="flag korean">🇰🇷</div>
+          <span>Korean</span>
+        </div>
+      </div>
+    </div>
+    <div class="text-center pt-2">
+     <a href="#" class="play-demo-btn"> Play Demo Now <i class="far fa-play-circle"></i></a>
+    </div>
+  </div>
+  <!-- 7 -->
+  <section class="section-6">
+    <div class="header">
+      <p class="subheading">Grow your Business with KAS</p>
+      <h1 class="main-heading">
+        Why Choose <span class="highlight">KAS AI Call Assistant</span><br>
+        for your Business
+      </h1>
+    </div>
+
+    <div class="features-grid">
+      <div class="ai-feature-card bg-1">
+        <div class="Ai-feature-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <h3 class="feature-title">24/7 Call Handling</h3>
+        <p class="feature-description">
+          KAS answers every call, day or night, so you never lose a lead while you're busy, closed, or asleep.
+        </p>
+      </div>
+
+      <div class="ai-feature-card bg-2">
+        <div class="Ai-feature-icon">
+          <i class="fas fa-language"></i>
+        </div>
+        <h3 class="feature-title">Supports 80+ Languages</h3>
+        <p class="feature-description">
+          From English to Spanish — KAS speaks your customer's language fluently and naturally, right out of the box.
+        </p>
+      </div>
+
+      <div class="ai-feature-card bg-3">
+        <div class="Ai-feature-icon">
+          <i class="fas fa-comments"></i>
+        </div>
+        <h3 class="feature-title">Human-Like Conversations</h3>
+        <p class="feature-description">
+          No robotic scripts. KAS understands context, responds like a real team & adapts to every caller's needs.
+        </p>
+      </div>
+
+      <div class="ai-feature-card bg-4">
+        <div class="Ai-feature-icon">
+          <i class="fas fa-cogs"></i>
+        </div>
+        <h3 class="feature-title">Custom for Your Business</h3>
+        <p class="feature-description">
+          Personalize voice, tone, greetings, and scripts to match your brand — KAS sounds like your assistant, not a
+          bot.
+        </p>
+      </div>
+
+      <div class="ai-feature-card bg-5">
+        <div class="Ai-feature-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3 class="feature-title">Cost-Effective & Scalable</h3>
+        <p class="feature-description">
+          Say goodbye to receptionist salaries and call center contracts. KAS gives you more value & grows with you.
+        </p>
+      </div>
+
+      <div class="ai-feature-card bg-6">
+        <div class="Ai-feature-icon">
+          <i class="fas fa-rocket"></i>
+        </div>
+        <h3 class="feature-title">Easy Setup, Instant Results</h3>
+        <p class="feature-description">
+          Get started in minutes. No coding, no tech headaches. Just plug, play, and let KAS start taking calls like a
+          pro.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- 7 -->
+  <section class="demo-section">
+    <div class="container">
+      <div class="content-wrapper">
+        <div class="text-content">
+          <p class="subheading text-white">In This Demo, You'll Hear KAS</p>
+          <h2 class=" text-white">
+            <span class="highlight-blue">Want to Hear</span> What<br>
+            <span class="highlight-blue">KAS</span> Actually Sounds Like?
+          </h2>
+          <p class="description">
+            Listen to how KAS handles a real customer call. No scripts, no awkward pauses, just results.
+          </p>
+          <a href="#" class="cta-button">
+            <span class="checkmark">✓</span>
+            Book an appointment
+          </a>
+        </div>
+
+        <div class="image-content">
+          <img src="assets/2.png" alt="KAS AI Assistant" class="assistant-image">
+          <div class="audio-waveform">
+            <img src="assets/mic-round.PNG" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 8 -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <p class="text-muted mb-1">Pricing Plan</p>
+      <h2 class="fw-bold">Flexible Plans That Pay for Themselves in <span class="text-primary">1 Job</span></h2>
+      <p class="text-primary mb-5">Get more calls answered, more leads captured, more business done.</p>
+
+      <div class="row g-4">
+
+        <!-- Basic Plan -->
+        <div class="col-md-4">
+          <div class="pricing-card h-100">
+            <h4 class="fw-bold">Basic Plan</h4>
+            <p class="plan-label">Solo operators or small teams</p>
+            <div class="plan-price">$497<small class="fs-5 fw-normal">/Month</small></div>
+            <a href="#" class="btn plan-btn">Get started ➤</a>
+            <ul class="feature-list text-start mt-3">
+              <li>100 Calls/month</li>
+              <li>1 Business Profile</li>
+              <li>1 Language Support</li>
+              <li>Basic Call Scripts</li>
+              <li>Daily Call Summary via Email</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Standard Plan -->
+        <div class="col-md-4">
+          <div class="pricing-card h-100">
+            <h4 class="fw-bold">Standard Plan</h4>
+            <p class="plan-label">Growing businesses with high call volume</p>
+            <div class="plan-price">$679<small class="fs-5 fw-normal">/Month</small></div>
+            <a href="#" class="btn plan-btn">Get started ➤</a>
+            <ul class="feature-list text-start mt-3">
+              <li>500 Calls/month</li>
+              <li>3 Business Profiles</li>
+              <li>Multilingual Support</li>
+              <li>Advanced Call Routing & Custom Scripts</li>
+              <li>Call Recordings + Transcripts</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="col-md-4">
+          <div class="pricing-card h-100">
+            <h4 class="fw-bold">Premium Plan</h4>
+            <p class="plan-label">Multi-location or full automation users</p>
+            <div class="plan-price">$997<small class="fs-5 fw-normal">/Month</small></div>
+            <a href="#" class="btn plan-btn">Get started ➤</a>
+            <ul class="feature-list text-start mt-3">
+              <li>Unlimited Calls</li>
+              <li>Unlimited Languages</li>
+              <li>Auto-Scheduling + Payment</li>
+              <li>Dedicated Account Manager</li>
+              <li>24/7 Live Chat Support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 9 -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <p class="text-muted mb-2"> Testimonial</p>
+      <h2 class="fw-bold mb-3"> See What Others Are <span class="text-primary">Saying</span></h2>
+      <div class="row g-4">
+        <!-- Basic Plan -->
+        <div class="col-md-12">
+          <img src="assets/testimonial.jpg" class="testimnial-img" alt="testimonial">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 10 -->
+  <section class="py-5 px-3 mb-5">
+    <div class="container">
+      <p class="text-center  text-muted mb-1">FAQs</p>
+      <h2 class="faq-title text-center  mb-4">Frequently Asked <span class="highlight">Questions</span></h2>
+      <div class="row align-items-center g-5">
+
+        <!-- Left: FAQs -->
+        <div class="col-lg-6">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item mb-2 border-0">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                  What exactly is KAS? How does it work?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  KAS is your AI-powered voice assistant that answers your business calls just like a human. It speaks
+                  naturally, understands customer questions, books appointments, and shares real-time call summaries.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-2 border-0">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo">
+                  Do I need any special software for KAS?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  No additional software is needed. KAS works with your existing phone system and CRM tools.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-2 border-0">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree">
+                  Can KAS speak my local language?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes! KAS supports multiple languages and can be customized to fit your local dialect and tone.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-2 border-0">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour">
+                  If KAS can’t answer a question?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  If KAS doesn’t know the answer, it routes the call or logs the question so your team can follow up.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-2 border-0">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive">
+                  Can I customize KAS for my customers?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Absolutely! You can fully customize the voice, script, tone, and behavior to match your brand.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="col-lg-6 text-center">
+          <img src="assets/Illutration F&!.png" alt="FAQ Illustration" class="faq-image img-fluid">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- 11 -->
+
+  <footer class="footer">
+    <div class="highlight-section">
+      <div class="row">
+        <div class="col-6">
+          <h3>Still Missing Calls?<br>Every Missed Call = Missed Revenue</h3>
+        </div>
+        <div class="col-6">
+          <p>KAS never gets sick, doesn't ask for a raise, and never lets a customer go to voicemail.</p>
+          <div class="highlight-buttons">
+            <button class="btn-primary-1">Let KAS Answer Your Next Call</button>
+            <button class="btn-secondary">Try It Free Today</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="kas-header">
+      <div class="container">
+        <div class="row align-items-center mb-4">
+          <!-- Logo Section -->
+          <div class="col-lg-3 col-md-12 mb-3 mb-lg-0">
+            <div class="d-flex align-items-center justify-content-center justify-content-lg-start">
+              <img src="assets/Logo-kas.png" class="ft-kas-logo" alt="">
+            </div>
+          </div>
+
+          <!-- Message Section -->
+          <div class="col-lg-6 col-md-12 mb-3 mb-lg-0 ">
+            <div class="kas-message text-center text-lg-end pe-5">
+              Hundreds of local businesses are already using KAS.<br>
+              Don't fall behind. Start capturing every call today.
+            </div>
+          </div>
+
+          <!-- Customer Avatars Section -->
+          <div class="col-lg-3 col-md-12">
+            <div class="avatars-container">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+                alt="Customer" class="customer-avatar">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+                alt="Customer" class="customer-avatar">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+                alt="Customer" class="customer-avatar">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face"
+                alt="Customer" class="customer-avatar">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face"
+                alt="Customer" class="customer-avatar">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face"
+                alt="Customer" class="customer-avatar">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face"
+                alt="Customer" class="customer-avatar">
+              <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=100&h=100&fit=crop&crop=face"
+                alt="Customer" class="customer-avatar">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4>About</h4>
+          <p class="fs-sm">At vero eoset accusamus et iusto odio dignissimos ducimus blanditiis praesentium voluptatu
+            dele</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Product</h4>
+          <ul>
+            <li class="fs-sm">Features</li>
+            <li class="fs-sm">Integrations</li>
+            <li class="fs-sm">Pricing</li>
+            <li class="fs-sm">Changelog</li>
+            <li class="fs-sm">Roadmap</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Community</li>
+            <li>Careers</li>
+            <li>Affiliate Program</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <li>Download</li>
+            <li>Setting & Privacy</li>
+            <li>FAQs</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+
+        <div class="footer-column newsletter">
+          <h4>Newsletter</h4>
+          <input type="email" placeholder="Email Address">
+          <button>Sign in →</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>Copyright ©2025, <a href="#">Killitonline</a> All Right Reserved</p>
+      <p><a href="#">Terms Of Use</a> | <a href="#">Privacy Policy</a> | <a href="#">FAQs</a></p>
+    </div>
+  </footer>
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

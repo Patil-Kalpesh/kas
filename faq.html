@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ Section</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .faq-title {
+      color: #1d3dd2;
+      font-weight: 700;
+    }
+    .accordion-button {
+      font-weight: 600;
+      background-color: #f4f7fe;
+      border-radius: 12px !important;
+      margin-bottom: 10px;
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: #e6efff;
+      color: #1d3dd2;
+    }
+    .accordion-body {
+      background-color: #f9f9f9;
+      border-radius: 0 0 12px 12px;
+    }
+    .faq-image {
+      width: 100%;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+
+<section class="py-5 px-3">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Left: FAQs -->
+      <div class="col-lg-6">
+        <p class="text-center text-lg-start text-muted mb-1">FAQs</p>
+        <h2 class="faq-title text-center text-lg-start mb-4">Frequently Asked <span class="text-primary">Questions</span></h2>
+
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                What exactly is KAS? How does it work?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                KAS is your AI-powered voice assistant that answers your business calls just like a human. It speaks naturally, understands customer questions, books appointments, and shares real-time call summaries.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                Do I need any special software for KAS?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                No additional software is needed. KAS works with your existing phone system and CRM tools.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                Can KAS speak my local language?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes! KAS supports multiple languages and can be customized to fit your local dialect and tone.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                If KAS can’t answer a question?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                If KAS doesn’t know the answer, it routes the call or logs the question so your team can follow up.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                Can I customize KAS for my customers?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Absolutely! You can fully customize the voice, script, tone, and behavior to match your brand.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Image -->
+      <div class="col-lg-6 text-center">
+        <img src="/mnt/data/a4258391-082e-42b8-a458-46f37ca4f446.png" alt="FAQ Illustration" class="faq-image img-fluid">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

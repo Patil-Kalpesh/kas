@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAS - Keep Appointments Simple</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .kas-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 120px;
+            padding: 20px 0;
+        }
+        
+        .kas-logo {
+            background: #4a9eff;
+            border-radius: 12px;
+            padding: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+        
+        .kas-logo i {
+            color: white;
+            font-size: 24px;
+        }
+        
+        .kas-brand h2 {
+            color: white;
+            font-weight: bold;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .kas-tagline {
+            color: #b8c5d6;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        .kas-message {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+        
+        .customer-avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 2px solid #4a9eff;
+            margin-left: -8px;
+            object-fit: cover;
+        }
+        
+        .customer-avatar:first-child {
+            margin-left: 0;
+        }
+        
+        .avatars-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        @media (max-width: 768px) {
+            .kas-brand h2 {
+                font-size: 2rem;
+            }
+            
+            .kas-message {
+                font-size: 1rem;
+                text-align: center;
+                margin: 20px 0;
+            }
+            
+            .avatars-container {
+                justify-content: center;
+                margin-top: 15px;
+            }
+            
+            .customer-avatar {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="kas-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo Section -->
+                <div class="col-lg-3 col-md-12 mb-3 mb-lg-0">
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                        <div class="kas-logo">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="kas-brand">
+                            <h2>KAS</h2>
+                            <p class="kas-tagline">Keep Appointments Simple</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Message Section -->
+                <div class="col-lg-6 col-md-12 mb-3 mb-lg-0">
+                    <div class="kas-message text-center text-lg-start">
+                        Hundreds of local businesses are already using KAS.<br>
+                        Don't fall behind. Start capturing every call today.
+                    </div>
+                </div>
+                
+                <!-- Customer Avatars Section -->
+                <div class="col-lg-3 col-md-12">
+                    <div class="avatars-container">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Customer" class="customer-avatar">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face" alt="Customer" class="customer-avatar">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Customer" class="customer-avatar">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Customer" class="customer-avatar">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face" alt="Customer" class="customer-avatar">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face" alt="Customer" class="customer-avatar">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face" alt="Customer" class="customer-avatar">
+                        <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=100&h=100&fit=crop&crop=face" alt="Customer" class="customer-avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Demo Content -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h3>Welcome to KAS</h3>
+                <p class="lead">Your appointment scheduling solution that helps you capture every call and never miss a potential customer.</p>
+                <div class="row mt-4">
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-phone-alt text-primary me-2"></i>Call Capture</h5>
+                                <p class="card-text">Never miss a call again with our advanced call capture system.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-calendar-check text-success me-2"></i>Easy Scheduling</h5>
+                                <p class="card-text">Streamline your appointment booking process with our intuitive interface.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-chart-line text-warning me-2"></i>Business Growth</h5>
+                                <p class="card-text">Join hundreds of businesses already growing with KAS.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

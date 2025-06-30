@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAS - Learn Languages for Free</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1b3a 0%, #2d1b69 50%, #4c2a85 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 20%, rgba(99, 102, 241, 0.3) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 80%, rgba(139, 92, 246, 0.2) 0%, transparent 50%);
+            z-index: 0;
+        }
+
+        .container {
+            background: rgba(30, 30, 60, 0.9);
+            border-radius: 32px;
+            padding: 40px;
+            max-width: 1200px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .explore-btn {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto 40px;
+            transition: transform 0.2s ease;
+        }
+
+        .explore-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .main-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            margin-bottom: 40px;
+        }
+
+        .avatar-section {
+            flex-shrink: 0;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 20px;
+            background: url('/placeholder.svg?height=120&width=120') center/cover;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .content-section {
+            flex: 1;
+        }
+
+        .main-title {
+            font-size: 48px;
+            font-weight: 700;
+            color: white;
+            line-height: 1.2;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .main-title .highlight {
+            background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .languages-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .language-pill {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            padding: 8px 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .language-pill:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-1px);
+        }
+
+        .flag {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        .flag.english { background: linear-gradient(45deg, #1e40af, #dc2626); }
+        .flag.spain { background: linear-gradient(45deg, #dc2626, #fbbf24); }
+        .flag.russia { background: linear-gradient(45deg, #ffffff, #1e40af, #dc2626); }
+        .flag.japanese { background: linear-gradient(45deg, #ffffff, #dc2626); }
+        .flag.korean { background: linear-gradient(45deg, #1e40af, #dc2626, #ffffff); }
+        .flag.egypt { background: linear-gradient(45deg, #dc2626, #ffffff, #000000); }
+        .flag.brazil { background: linear-gradient(45deg, #16a34a, #fbbf24); }
+        .flag.nigeria { background: linear-gradient(45deg, #16a34a, #ffffff); }
+        .flag.france { background: linear-gradient(45deg, #1e40af, #ffffff, #dc2626); }
+        .flag.mexico { background: linear-gradient(45deg, #16a34a, #ffffff, #dc2626); }
+
+        .play-demo-btn {
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0 auto;
+            transition: all 0.2s ease;
+        }
+
+        .play-demo-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .play-icon {
+            width: 0;
+            height: 0;
+            border-left: 8px solid white;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .main-content {
+                flex-direction: column;
+                gap: 30px;
+                text-align: center;
+            }
+
+            .main-title {
+                font-size: 32px;
+            }
+
+            .languages-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="explore-btn">Explore All Languages</button>
+        
+        <div class="main-content">
+            <div class="avatar-section">
+                <div class="avatar"></div>
+            </div>
+            
+            <div class="content-section">
+                <h1 class="main-title">
+                    Get Started <span class="highlight">with KAS</span><br>
+                    in 80+ Languages for Free!
+                </h1>
+            </div>
+        </div>
+
+        <div class="languages-grid">
+            <div class="language-pill">
+                <div class="flag english">🇬🇧</div>
+                <span>English</span>
+            </div>
+            <div class="language-pill">
+                <div class="flag spain">🇪🇸</div>
+                <span>Spain</span>
+            </div>
+            <div class="language-pill">
+                <div class="flag russia">🇷🇺</div>
+                <span>Russia</span>
+            </div>
+            <div class="language-pill">
+                <div class="flag japanese">🇯🇵</div>
+                <span>Japanese</span>
+            </div>
+            <div class="language-pill">
+                <div class="flag korean">🇰🇷</div>
+                <span>Korean</span>
+            </div>
+            
+            <div class="language-pill">
+                <div class="flag egypt">🇪🇬</div>
+                <span>Egypt</span>
+            </div>
+            <div class="language-pill">
+                <div class="flag brazil">🇧🇷</div>
+                <span>Brazil</span>
+            </div>
+            <div class="language-pill">
+                <div class="flag nigeria">🇳🇬</div>
+                <span>Nigeria</span>
+            </div>
+            <div class="language-pill">
+                <div class="flag france">🇫🇷</div>
+                <span>France</span>
+            </div>
+            <div class="language-pill">
+                <div class="flag mexico">🇲🇽</div>
+                <span>Mexico</span>
+            </div>
+            
+            <div class="language-pill">
+                <div class="flag english">🇬🇧</div>
+                <span>English</span>
+            </div>
+            <div class="language-pill">
+                <div class="flag spain">🇪🇸</div>
+                <span>Spain</span>
+            </div>
+            <div class="language-pill">
+                <div class="flag russia">🇷🇺</div>
+                <span>Russia</span>
+            </div>
+            <div class="language-pill">
+                <div class="flag japanese">🇯🇵</div>
+                <span>Japanese</span>
+            </div>
+            <div class="language-pill">
+                <div class="flag korean">🇰🇷</div>
+                <span>Korean</span>
+            </div>
+        </div>
+
+        <button class="play-demo-btn">
+            <div class="play-icon"></div>
+            Play Demo Now
+        </button>
+    </div>
+</body>
+</html>
