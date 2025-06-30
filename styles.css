@@ -114,9 +114,13 @@ body {
 
 .hero-text {
   font-size: 1.1rem;
-  color: #555;
+  color: #080a48;
   margin-bottom: 30px;
   line-height: 1.6;
+}
+
+.video-ai {
+  width: 60%;
 }
 
 .btn-primary {
@@ -153,8 +157,8 @@ body {
 }
 
 .btn-md {
-  padding: 8px 20px;
-  font-size: 0.6rem;
+  padding: 8px 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -709,7 +713,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   row-gap: 12px;
-  column-gap:65px;
+  column-gap: 65px;
 }
 
 .language-pill {
@@ -1170,10 +1174,6 @@ footer {
     gap: 4rem;
   }
 
-  .main-heading {
-    font-size: 3rem;
-  }
-
   .description {
     font-size: 1.2rem;
   }
@@ -1185,11 +1185,32 @@ footer {
 
 @media (max-width: 767px) {
   .hero-title {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+    font-size: 0.93rem;
+    margin-bottom: 10px;
   }
 
   .hero-section {
     padding: 30px 20px;
+  }
+
+  .btn-md {
+    padding: 8px 6px;
+    font-size: 0.6rem;
+    font-weight: 500;
   }
 
   .hero-buttons {
@@ -1214,11 +1235,90 @@ footer {
   }
 
   .or-text {
-    margin: 10px 0;
+    margin: 0px 5px;
+  }
+
+  .hero-images {
+    height: auto;
   }
 
   .main-heading {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+  }
+
+  .video-ai {
+    width: 60%;
+  }
+
+  .trusted-heading {
+    font-size: 1.4rem;
+  }
+
+  .business-types {
+    font-size: 8px;
+    padding: 7px 0px;
+  }
+
+  .trusted-count {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+
+  .trusted-text {
+    font-size: 1.45rem;
+  }
+
+  .ai-img-bg {
+    background-color: #fff;
+    padding: 5px;
+    width: 115px;
+    margin: -54px 16px auto;
+    border-radius: 10px;
+  }
+.text-content{
+  text-align: center;
+}
+.cta-button{
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+  .ai-img-bg p {
+    font-size: 8px;
+  }
+
+  .ai-circle-img {
+    position: absolute;
+    top: -90px;
+    left: 173px;
+    transform: translateY(-50%);
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid white;
+  }
+.assistant-image{
+  width: 50%;
+  margin-right: 0px;
+}
+  .audio-waveform {
+    position: absolute !important;
+    bottom: -20px;
+    left: 50px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .network-visualization {
+    height: auto;
   }
 
   .feature-text {
@@ -1237,10 +1337,6 @@ footer {
     padding: 60px 16px;
   }
 
-  .main-heading {
-    font-size: 36px;
-  }
-
   .features-grid {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -1248,10 +1344,6 @@ footer {
 
   .demo-section {
     padding: 1rem;
-  }
-
-  .main-heading {
-    font-size: 2rem;
   }
 
   .description {
@@ -1277,18 +1369,62 @@ footer {
     width: 40px;
     height: 40px;
   }
+
+  .lang-div {
+    border-radius: 14px;
+  }
+
+  .languages-wraper {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 5%
+  }
+
+  .languages-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 12px;
+    column-gap: 7px;
+    margin-top: 20px;
+  }
+
+  .main-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  .language-pill {
+    background: #1a1f46;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 2px 3px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    height: 25px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
 }
 
 /* Responsive Styles */
 @media (max-width: 991px) {
-  .hero-title {
-    font-size: 2.8rem;
-  }
 
-  .hero-images {
+  /* .hero-images {
     margin-top: 50px;
     height: 600px;
-  }
+  } */
 
   .floating-card {
     position: relative;
@@ -1304,30 +1440,14 @@ footer {
     display: none;
   }
 
-  .main-heading {
-    font-size: 2.2rem;
-  }
-
-  .trusted-heading {
-    font-size: 2.4rem;
-  }
-
-  .business-types {
-    font-size: 1rem;
-    padding: 12px 20px;
-  }
-
   .count {
-    font-size: 6rem;
+    font-size: 3rem;
   }
 
   .plus {
     font-size: 3rem;
   }
 
-  .trusted-text {
-    font-size: 2.8rem;
-  }
 
   .logo-item {
     flex: 0 0 33%;
@@ -1348,12 +1468,9 @@ footer {
     align-items: center;
   }
 
-
-
   .or-text {
     margin: 10px 0;
   }
-
 }
 
 @media (min-width: 1400px) {
