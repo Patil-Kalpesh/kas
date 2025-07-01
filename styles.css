@@ -978,11 +978,16 @@ body {
   font-weight: 700;
 }
 
+.highlight-smtext {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
 .highlight-section p {
   max-width: 500px;
   margin: 0 auto 1.5rem;
   font-size: 1rem;
-  color: #e0dcff;
+  color: #fff;
 }
 
 .highlight-buttons button {
@@ -1278,13 +1283,16 @@ footer {
     margin: -54px 16px auto;
     border-radius: 10px;
   }
-.text-content{
-  text-align: center;
-}
-.cta-button{
-  padding: 0.5rem 1rem;
-  font-size: 0.8rem;
-}
+
+  .text-content {
+    text-align: center;
+  }
+
+  .cta-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
   .ai-img-bg p {
     font-size: 8px;
   }
@@ -1300,10 +1308,12 @@ footer {
     overflow: hidden;
     border: 6px solid white;
   }
-.assistant-image{
-  width: 50%;
-  margin-right: 0px;
-}
+
+  .assistant-image {
+    width: 50%;
+    margin-right: 0px;
+  }
+
   .audio-waveform {
     position: absolute !important;
     bottom: -20px;
@@ -1415,6 +1425,20 @@ footer {
     height: 25px;
     transition: all 0.2s ease;
     cursor: pointer;
+  }
+.highlight-section{
+  padding: 1rem;
+}
+  .highlight-section h2 {
+    margin: 0 0 0rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .highlight-smtext {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin:10px 0px;
   }
 }
 
