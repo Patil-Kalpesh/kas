@@ -1440,6 +1440,22 @@ footer {
     font-weight: 600;
     margin:10px 0px;
   }
+  .highlight-buttons button {
+    padding: 10px 7px;
+    margin: 0 0.35rem 8px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 10px;
+    transition: 0.3s;
+}
+.btn-secondary {
+  background-color: transparent;
+  color: #fff;
+  outline: 1px solid #fff;
+}
+
 }
 
 /* Responsive Styles */
