@@ -24,7 +24,9 @@ body {
   backdrop-filter: blur(10px);
   background-color: #d5e0fc;
 }
-
+#mobileMenu{
+   background-color: #d5e0fc;
+}
 .navbar-brand img.logo {
   height: 50px;
 }
@@ -1455,7 +1457,9 @@ footer {
   color: #fff;
   outline: 1px solid #fff;
 }
-
+.footer-grid {
+  padding: 0px 32px;
+}
 }
 
 /* Responsive Styles */
