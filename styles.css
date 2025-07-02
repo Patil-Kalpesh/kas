@@ -17,6 +17,11 @@ body {
 /* .navbar {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 } */
+   .nav-link.active {
+    color: #3b82f6 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #3b82f6;
+  }
 .sticky-header {
   position: sticky;
   top: 0;
@@ -1171,7 +1176,54 @@ footer {
 }
 
 /* ---footer--- */
+/* testimonial */
+.swiper-button-next:after, .swiper-button-prev:after{
+font-size: 30px !important;
+}
+.testimonial-card {
+  position: relative;
+  background-color: lab(89.15% 1.85 -14.84 / 0.571) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.testimonial-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.client-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin: 0 auto;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #333;
+  line-height: 1.6;
+  margin: 10px 0 15px;
+  font-size: 1rem;
+}
+
+.stars i {
+  font-size: 1rem;
+}
+
+.quote-icon {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 2rem;
+  color: #E0F7FA;
+  z-index: 0;
+  opacity: 0.2;
+}
+/* ---- */
 
 /* Responsive Styles */
 /* Desktop Layout */
