@@ -426,6 +426,9 @@ body {
   position: relative;
   transition: all 0.3s ease;
 }
+.comparison-card li {
+list-style-type: style bullet;;
+}
 
 .comparison-card.active {
   background-color: #ffffff;
@@ -918,11 +921,11 @@ body {
   padding-bottom: 10px;
 }
 
-.feature-list li::before {
+/* .feature-list li::before {
   content: '✔';
   color: #2176ff;
   margin-right: 8px;
-}
+} */
 
 /* ---faq---- */
 .faq-title {
