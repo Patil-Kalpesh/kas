@@ -1311,7 +1311,7 @@ font-size: 30px !important;
       stroke-width: 2;
       stroke-dasharray: 6;
       fill: none;
-      marker-end: url(#arrowhead);
+      /* marker-end: url(#arrowhead); */
     }
     .arrows .c-line {
       stroke: #4d90fe;
@@ -1341,8 +1341,19 @@ font-size: 30px !important;
       margin-top: 20px;
       border: none;
       cursor: pointer;
+      /* position: absolute;
+      left: 30%; */
     }
+.step-icon{
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.step-icon img{
+  width: 60px;
 
+}
 /* Responsive Styles */
 /* Desktop Layout */
 @media (min-width: 768px) {
@@ -1361,6 +1372,13 @@ font-size: 30px !important;
 }
 
 @media (max-width: 767px) {
+   .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .arrows {
+        display: none;
+      }
   .hero-title {
     font-size: 1.9rem;
     text-align: center;
